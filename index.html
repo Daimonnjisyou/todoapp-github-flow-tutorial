@@ -4,25 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>todoList</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Todo app</title>
   </head>
   <body>
     <div>
       <h1>Todo List</h1>
-      <form action="/todo" method="POST">
-        <input type="text" name="todo" placeholder="Enter todo" />
-        <button type="submit">Add</button>
-      </form>
-      <div>
-        <ul id="todoList"></ul>
-      </div>
+      <input type="text" id="input" />
+      <button id="addTodo">タスクを追加</button>
     </div>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <div>
+      <ul id="todoList"></ul>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
